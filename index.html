@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monoalphabetic Substitution Cipher</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+    <div class="nd">
+        <div class="ndcont">
+        <center>
+    <h1>Monoalphabetic</h1>
+    <input class="inp" type="file" id="file-input" accept=".txt">
+    <div><label for="key-input" class="keyin">Enter Key:</label>
+    <input class="key" type="text" id="key-input" placeholder="Key">
+    </div>
+    
+    <div><button onclick="encryptFile()">Encrypt</button>
+    <button onclick="decryptFile()">Decrypt</button></div>
+    </center>
+        </div>
+    </div>
+
+    <div class="hold">
+    <div class="rd">
+        <p>Result:</p>
+        <div class="reshold">
+        <div class="res" id="result"></div>
+        <a id="download-link" style="display: none;"></a>
+        </div>
+    </div>
+    <div class="rth">
+        <div class="cont">
+            <div class="mono"><h2>What is Monoalphabetic Substitution Cipher?</h2>
+                <p>Monoalphabetic substitution cipher is a basic substitution cipher where each letter in the plaintext is substituted with a corresponding letter from the cipher alphabet. In this cipher, the relationship between the plaintext and the ciphertext is based on a fixed mapping of the letters of the alphabet.</p>
+            </div>
+            <div class="sub">
+                <h2>Symmetric Algorithm?</h2>
+                    <p>A symmetric algorithm, also known as a symmetric-key algorithm or a secret-key algorithm, is a type of encryption algorithm that uses the same key for both encryption and decryption of data. In symmetric encryption, the sender and receiver share a common secret key that is used to transform the plaintext into ciphertext and vice versa.</p>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+</body>
+</html>
